@@ -1,5 +1,14 @@
 export const projectsData = [
   {
+    title: "DumData",
+    description:
+      "A fake data generator that helps developers create realistic mock data for apps and APIs.",
+    image: "/Projects_Img/dumdata.JPG",
+    liveDemo: "https://dumdata.vercel.app/", 
+    sourceCode: "https://github.com/whereisbilal/DumData",
+    techStack: ["Next.js", "Typescript", "Tailwind", "MongoDB", "Api"],
+  },
+  {
     title: "LogoVines",
     description:
       "A modern logo gallery platform for uploading and showcasing logos.",
@@ -20,34 +29,7 @@ export const projectsData = [
     ],
   },
   {
-    title: "JSProjectForge",
-    description:
-      "A platform featuring beginner-to-advanced web development projects.",
-    image: "/Projects_Img/bg4.png",
-    liveDemo: "https://jsprojectforge.vercel.app/",
-    sourceCode: "https://github.com/whereisbilal/JSProjectForge",
-    techStack: ["Next.js", "TypeScript", "Tailwind", "Firebase", "Framer Motion"],
-  },
-  {
-    title: "DumData",
-    description:
-      "A fake data generator that helps developers create realistic mock data for apps and APIs.",
-    image: "/Projects_Img/bg12.png",
-    liveDemo: "https://dumdata.vercel.app/", 
-    sourceCode: "https://github.com/whereisbilal/DumData",
-    techStack: ["Next.js", "Typescript", "Tailwind", "MongoDB", "Api"],
-  },
-  {
-    title: "MailVines",
-    description:
-      "Free temporary & disposable email",
-    image: "/Projects_Img/bg11.png",
-    liveDemo: "https://mailvines.vercel.app/",
-    sourceCode: "https://github.com/whereisbilal/MailVines",
-    techStack: ["Node.js", "Typescript", "Tailwind", "GitHub", "MongoDB"],
-  },
-  {
-    title: "E-Commerce App",
+    title: "E-Commerce App (HoodAnix)",
     description:
       "A modern e-commerce application for premium hoodies.",
     image: "/Projects_Img/bg5.png",
@@ -61,6 +43,24 @@ export const projectsData = [
       "responsive-design",
       "ecommerce"
     ]
+  },
+  {
+    title: "JSProjectForge",
+    description:
+      "A platform featuring beginner-to-advanced web development projects.",
+    image: "/Projects_Img/bg4.png",
+    liveDemo: "https://jsprojectforge.vercel.app/",
+    sourceCode: "https://github.com/whereisbilal/JSProjectForge",
+    techStack: ["Next.js", "TypeScript", "Tailwind", "Firebase", "Framer Motion"],
+  },
+  {
+    title: "MailVines",
+    description:
+      "Free temporary & disposable email",
+    image: "/Projects_Img/bg11.png",
+    liveDemo: "https://mailvines.vercel.app/",
+    sourceCode: "https://github.com/whereisbilal/MailVines",
+    techStack: ["Node.js", "Typescript", "Tailwind", "GitHub", "MongoDB"],
   },
   {
     title: "Amna's Mehndi Studio",
