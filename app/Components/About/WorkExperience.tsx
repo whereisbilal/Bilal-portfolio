@@ -54,7 +54,7 @@ const WorkExperience = () => {
               learning Node.js, Express.js, and GraphQL — so that I can build
               full-stack applications.
             </p>
-          </div>
+          </div>  
         </div>
       </div>
     </section>
