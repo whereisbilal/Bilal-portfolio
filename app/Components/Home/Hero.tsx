@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -31,38 +32,40 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="max-w-4xl mx-auto px-5 py-15 font-mono">
-      <div className="flex flex-col items-start gap-6">
+    <section className="mx-auto w-full max-w-5xl px-4 py-10 font-mono sm:px-6 sm:py-12 md:px-8 md:py-16">
+      <div className="flex flex-col items-start gap-5 sm:gap-6">
         {/* Profile Image */}
         <img
           src="/Home_Img/bg10.png"
           alt="Muhammad Bilal"
-          className="w-32 h-32 rounded-full border border-gray-300 object-cover"
+          className="h-24 w-24 rounded-full border border-gray-300 object-cover sm:h-28 sm:w-28 md:h-32 md:w-32"
         />
 
         {/* Name */}
-        <h1 className="text-4xl font-bold text-black">
+        <h1 className="break-words text-3xl font-bold text-black sm:text-4xl md:text-5xl">
           Muhammad Bilal
         </h1>
 
         {/* Role */}
-        <p className="text-lg text-gray-600">
-          Frontend Developer | learning Full-Stack Development
+        <p className="max-w-full text-base leading-7 text-gray-600 sm:text-lg">
+          Frontend Developer | Learning Full-Stack Development
         </p>
 
         {/* About */}
-        <p className="max-w-3xl leading-8 text-gray-700">
-          I'm a Frontend Developer learning Full-Stack Development. I enjoy building modern web applications and improving my skills through practical projects.
+        <p className="max-w-3xl text-sm leading-7 text-gray-700 sm:text-base sm:leading-8">
+          I'm a Frontend Developer learning Full-Stack Development. I enjoy
+          building modern web applications and improving my skills through
+          practical projects.
         </p>
 
         {/* Social Links */}
-        <div className="flex items-center gap-6 text-xl text-gray-600">
+        <div className="flex items-center gap-5 text-xl text-gray-600 sm:gap-6 sm:text-2xl">
           <a
             href="https://github.com/whereisbilal"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:text-black transition"
+            className="transition hover:text-black"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -72,7 +75,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-blue-700 transition"
+            className="transition hover:text-blue-700"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
@@ -82,30 +85,28 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X"
-            className="hover:text-black transition"
+            className="transition hover:text-black"
           >
             <FontAwesomeIcon icon={faXTwitter} />
           </a>
         </div>
 
         {/* Resume Buttons */}
-        <div className="mt-2 flex flex-wrap items-center gap-4">
-          {/* View Resume */}
+        <div className="mt-2 flex w-full flex-col gap-3 min-[400px]:flex-row min-[400px]:flex-wrap sm:gap-4">
           <a
             href="https://imresume.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-black px-5 py-3 text-black transition hover:bg-black hover:text-white"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-black px-4 py-3 text-sm text-black transition hover:bg-black hover:text-white sm:px-5 sm:text-base"
           >
             <FontAwesomeIcon icon={faEye} />
             View Resume
           </a>
 
-          {/* Download Resume */}
           <a
             href="/Muhammad Bilal _ Developer Portfolio.pdf"
             download="Muhammad Bilal _ Developer Portfolio.pdf"
-            className="inline-flex items-center gap-2 rounded-lg bg-black px-5 py-3 text-white transition hover:bg-gray-800"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-black px-4 py-3 text-sm text-white transition hover:bg-gray-800 sm:px-5 sm:text-base"
           >
             <FontAwesomeIcon icon={faDownload} />
             Download Resume
@@ -113,30 +114,30 @@ const Hero = () => {
         </div>
 
         {/* Activity Section */}
-        <div className="mt-14 w-full">
-          <h2 className="mb-4 text-3xl font-bold tracking-wide text-black">
+        <div className="mt-8 hidden w-full min-w-0 sm:mt-10 md:mt-14 md:block">
+          <h2 className="mb-4 text-2xl font-bold tracking-wide text-black sm:text-3xl">
             ACTIVITY
           </h2>
 
           {githubData && (
-            <p className="flex items-center gap-2 text-gray-600">
+            <p className="flex flex-wrap items-center gap-2 text-sm text-gray-600 sm:text-base">
               <FontAwesomeIcon icon={faGithub} />
               <span>{githubData.public_repos} Repositories</span>
             </p>
           )}
 
-          <p className="mb-6 mt-5 text-gray-600">
+          <p className="mb-5 mt-4 text-sm leading-6 text-gray-600 sm:mb-6 sm:mt-5 sm:text-base">
             GitHub contributions over the last year.
           </p>
 
-          <div className="w-full overflow-x-auto">
-            <div className="flex min-w-max justify-center">
+          <div className="w-full max-w-full overflow-x-auto pb-2">
+            <div className="flex w-max min-w-full justify-start sm:justify-center">
               <GitHubCalendar
                 username="whereisbilal"
                 colorScheme="light"
-                fontSize={14}
-                blockSize={12}
-                blockMargin={4}
+                fontSize={12}
+                blockSize={10}
+                blockMargin={3}
                 theme={{
                   light: [
                     "#ebedf0",
