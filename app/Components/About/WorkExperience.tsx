@@ -59,7 +59,7 @@ const WorkExperience = () => {
       </div>
     </section>
   );
-};
+}; 
 
 export default WorkExperience;
 
